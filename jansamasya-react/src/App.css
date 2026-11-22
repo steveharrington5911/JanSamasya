@@ -1,0 +1,320 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #172b4d;
+  background: #ffffff;
+}
+
+.navbar {
+  height: 76px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 800;
+  color: #123b70;
+}
+
+.logo span {
+  color: #1685e8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #34445c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #1685e8;
+}
+
+.nav-btn, .primary-btn {
+  text-decoration: none;
+  background: #1679d4;
+  color: white;
+  padding: 13px 21px;
+  border-radius: 7px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.hero {
+  min-height: 550px;
+  padding: 80px 10%;
+  background: linear-gradient(120deg, #eff7ff, #dceeff);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.hero-content {
+  max-width: 570px;
+}
+
+.tagline, .section-tag {
+  color: #1679d4;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.15;
+  color: #123b70;
+  margin-bottom: 22px;
+}
+
+.hero h1 span {
+  color: #1685e8;
+}
+
+.hero-content > p:not(.tagline) {
+  color: #61718a;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.hero-card {
+  background: white;
+  padding: 45px 35px;
+  border-radius: 18px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 15px 40px rgba(30,90,150,0.12);
+}
+
+.hero-icon {
+  font-size: 75px;
+  margin-bottom: 20px;
+}
+
+.hero-card h3 {
+  color: #123b70;
+  margin-bottom: 12px;
+}
+
+.hero-card p {
+  color: #718096;
+  line-height: 1.6;
+}
+
+.about {
+  padding: 90px 9%;
+  text-align: center;
+}
+
+.about h2, .report h2, .track h2 {
+  font-size: 34px;
+  color: #123b70;
+  margin-bottom: 45px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.step-card {
+  padding: 35px 25px;
+  background: #f7faff;
+  border: 1px solid #e5eef9;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.step-card span {
+  color: #1685e8;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.step-card h3 {
+  margin: 18px 0 12px;
+  color: #123b70;
+}
+
+.step-card p {
+  color: #718096;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.report {
+  background: #f1f7ff;
+  padding: 85px 20px;
+  text-align: center;
+}
+
+.report > p:not(.section-tag), .track > p:not(.section-tag) {
+  color: #718096;
+  margin-bottom: 25px;
+}
+
+.complaint-form {
+  max-width: 650px;
+  margin: 35px auto 0;
+  background: white;
+  padding: 35px;
+  border-radius: 14px;
+  text-align: left;
+  box-shadow: 0 8px 30px rgba(30,90,150,0.07);
+}
+
+.complaint-form label {
+  display: block;
+  margin: 18px 0 9px;
+  color: #34445c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.complaint-form input, .complaint-form select,
+.complaint-form textarea, .track-box input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d9e2ef;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.complaint-form input:focus, .complaint-form select:focus,
+.complaint-form textarea:focus, .track-box input:focus {
+  border-color: #1685e8;
+}
+
+.complaint-form textarea {
+  resize: vertical;
+}
+
+.complaint-form button, .track-box button {
+  border: none;
+  background: #1679d4;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 22px;
+}
+
+.track {
+  text-align: center;
+  padding: 85px 20px;
+}
+
+.track-box {
+  max-width: 550px;
+  margin: 30px auto 0;
+  display: flex;
+  gap: 12px;
+}
+
+.track-box input {
+  flex: 1;
+}
+
+.track-box button {
+  margin-top: 0;
+  white-space: nowrap;
+}
+
+footer {
+  background: #102e54;
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+footer h2 {
+  margin-bottom: 12px;
+}
+
+footer p {
+  color: #c5d5e9;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+@media (max-width: 850px) {
+  .navbar {
+    padding: 15px 5%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .nav-btn {
+    display: none;
+  }
+
+  .hero {
+    padding: 65px 7%;
+  }
+
+  .hero-card {
+    width: 100%;
+  }
+
+  .about h2, .report h2, .track h2 {
+    font-size: 27px;
+  }
+
+  .complaint-form {
+    padding: 22px;
+  }
+
+  .track-box {
+    flex-direction: column;
+  }
+}
